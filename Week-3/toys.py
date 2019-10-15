@@ -4,13 +4,21 @@ toys.py
 Simple toy functions to get comfortable working 
 with functions.
 '''
+import time
+print('hello world')
+time.sleep(1)
 
 
 # write a function that adds 1
 # to the input and prints the result
-def inc(a):
-    print(a)
-
+print('Toy 1')
+time.sleep (1)
+print('Input a number')
+A = input()
+A = int(A)
+A = A + 1
+time.sleep (1)
+print(A)
 
 # write a function that adds 1
 # to the input and returns the result
