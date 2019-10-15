@@ -80,7 +80,11 @@ print('end')
 # 'hohoho'
 print('Excersise 5; A function that repeats a string a given number of times.')
 def string_repeat(a, b):
-    print(a*b)
+    x = 0
+    while x < b:
+        print(a)
+        x = x + 1
+        continue
     return
 print('Please input a string then a value')
 H = input()
