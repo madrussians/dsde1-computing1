@@ -4,13 +4,18 @@ toys.py
 Simple toy functions to get comfortable working 
 with functions.
 '''
+# write a function that adds 1
+# to the input and prints the result
+
+def inc(a):
+    b = a + 1
+    print(b)
 
 # write a function that adds 1
 # to the input and prints the result
 def inc_return(a):
-    a = a + 1
-    print(a)
-    return(a)
+    b = a + 1
+    return(b)
 
 # write a function that adds
 # the two input numbers together
@@ -18,7 +23,6 @@ def inc_return(a):
 
 def sum(a, b):
     c = a + b
-    print(c)
     return(c)
 
 # write a function that takes two
@@ -28,16 +32,15 @@ def sum(a, b):
 
 def sum_inc(a, b):
     c = sum(a, b)
-    inc_return(c)
-    return(c)
+    d = c + 1
+    return(d)
 
 # write a function that returns a 
 # boolean (True or False) for whether 
 # the input number is even
 
 def is_even(a):
-    b = ( a % 2 ) == 0
-    print(b)   
+    b = ( a % 2 ) == 0  
     return(b)
 
 # create for loop that takes a string
@@ -48,5 +51,5 @@ def is_even(a):
 # 'hohoho'
 
 def string_repeat(a, b):
-    print(a*b)
-    
+    c = a * b
+    return(c)
