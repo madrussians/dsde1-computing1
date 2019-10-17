@@ -19,4 +19,3 @@ def period(a, b):
             raise(TypeError)
     else:
         raise(TypeError)
-
