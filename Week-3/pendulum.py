@@ -8,14 +8,15 @@ def period(a, b):
     if x == False:
         if y == False:
             if a < 0:
-                return(ValueError)
+                raise(ValueError)
             else:
                 if b <= 0:
-                    return(ValueError)
+                    raise(ValueError)
                 else:
                     c = 2 * math.pi * math.sqrt( a / b )
                     return(c)
         else:
-            return(TypeError)
+            raise(TypeError)
     else:
-        return(TypeError)
+        raise(TypeError)
+
