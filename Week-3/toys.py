@@ -48,9 +48,5 @@ def is_even(a):
 # 'hohoho'
 
 def string_repeat(a, b):
-    x = 0
-    while x < b:
-        print(a)
-        x = x + 1
-        continue
-    return
+    print(a*b)
+    
