@@ -10,7 +10,7 @@ def period(a, b):
             if a < 0:
                 return(ValueError)
             else:
-                if b < 0:
+                if b <= 0:
                     return(ValueError)
                 else:
                     c = 2 * math.pi * math.sqrt( a / b )
