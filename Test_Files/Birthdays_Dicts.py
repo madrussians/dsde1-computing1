@@ -3,7 +3,7 @@
 a = 0
 birthdays = {}
 while a == 0:
-    print('Would you like to add a birthday or retreive one? a/r')
+    print('Would you like to add a birthday, retreive one or quit? a/r/q')
     c = input()
     if c == 'a':
         print('Please tell me their name:')
@@ -21,6 +21,8 @@ while a == 0:
         else:
             print('I don\'t know this birthday')
             continue
+    if c == 'q':
+        exit()
     else:
         continue
     
