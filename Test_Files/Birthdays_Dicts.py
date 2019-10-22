@@ -1,4 +1,6 @@
-#A program for remebering birthdays
+'''
+A program for remebering birthdays
+'''
 
 A = 0
 BIRTHDAYS = {}
