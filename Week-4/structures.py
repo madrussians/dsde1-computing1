@@ -22,7 +22,7 @@ def first_and_last(the_list):
 def part_reverse(the_list, beginning, end):
     if beginning < end and end < len(the_list)-1:
         new_list_a = the_list[beginning:end]
-        new_list_b = list.reverse(new_list)
+        new_list_b = list.reverse(new_list_a)
     return(new_list_b)
 
 
