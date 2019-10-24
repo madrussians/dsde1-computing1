@@ -39,6 +39,7 @@ def repeat_at_index(the_list, index):
 # write a function that checks whether the word is a palindrome, i.e. it reads
 # the same forward and backwards
 def palindrome_word(word):
+    word = word.lower()
     drow = word[::-1]
     result = drow == word
     return result
@@ -49,7 +50,7 @@ def palindrome_word(word):
 # capital or not. 
 def palindrome_sentence(sentence):
     new_sentence = ''.join(e for e in sentence if e.isalnum())
-    new_new_sentence = .lower(new_sentence)
+    new_new_sentence = new_sentence.lower()
     reversed_sentence = new_new_sentence[::-1]
     result = reversed_sentence == new_new_sentence
     return result
@@ -61,8 +62,17 @@ def palindrome_sentence(sentence):
 # the end.  The concatenated sentence must have no white space at the beginning
 # or at the end and the must be exactly one space after the end of the first
 # sentence. 
-def concatenate_sentences(sentenece1, sentence2):
-    return
+def concatenate_sentences(sentence1, sentence2):
+    s1 = sentence1.strip()
+    s2 = sentence2.strip()
+    if s1[-1] == '.' or '!' or '?' and s1[0].isupper()
+        if s2[-1] == '.' or '!' or '?' and s2[0].isupper()
+            result = s1 + ' ' + s2
+            return result
+        else
+            raise ValueError
+    else
+        raise ValueError
 
 
 # Dictionaries
