@@ -39,7 +39,7 @@ def repeat_at_index(the_list, index):
 # write a function that checks whether the word is a palindrome, i.e. it reads
 # the same forward and backwards
 def palindrome_word(word):
-    drow = word[::3]
+    drow = word[::-1]
     result = drow == word
     return result
 
