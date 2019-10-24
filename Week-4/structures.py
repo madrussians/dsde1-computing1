@@ -48,7 +48,11 @@ def palindrome_word(word):
 # like fullstops, commas, etc. Also do not consider whether the letter is
 # capital or not. 
 def palindrome_sentence(sentence):
-    return
+    new_sentence = ''.join(e for e in sentence if e.isalnum())
+    new_new_sentence = .lower(new_sentence)
+    reversed_sentence = new_new_sentence[::-1]
+    result = reversed_sentence == new_new_sentence
+    return result
 
 # write a function that concatenates two sentences. First the function checks
 # whether the sentence meets the following criteria: it starts with a capital
