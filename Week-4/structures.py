@@ -65,13 +65,16 @@ def palindrome_sentence(sentence):
 def concatenate_sentences(sentence1, sentence2):
     s1 = sentence1.strip()
     s2 = sentence2.strip()
-    if s1[-1] == '.' or '!' or '?' and s1[0].isupper()
-        if s2[-1] == '.' or '!' or '?' and s2[0].isupper()
-            result = s1 + ' ' + s2
-            return result
-        else
+    if s1[-1] in '.!?':
+        if s2[-1] in '.!?':
+            if s1[0].isupper() and s2[0].isupper():
+                result = s1 + ' ' + s2
+                return result
+            else:
+                raise ValueError
+        else:
             raise ValueError
-    else
+    else:
         raise ValueError
 
 
@@ -80,14 +83,23 @@ def concatenate_sentences(sentence1, sentence2):
 # write a function that checks whether there is a record with given key in the
 # dictionary. Return True or False.
 def index_exists(dictionary, key):
-    return
+    if key in dictionary:
+        return True
+    else:
+        return False
+
 
 # write a function which checks whether given value is stored in the
 # dictionary. Return True or False.
 def value_exists(dictionary, value):
+    if value in dictionary.values():
+        return True
+    else:
+        return False
     return
 
 # write a function that returns a new dictionary which contains all the values
 # from dictionary1 and dictionary2.
 def merge_dictionaries(dictionary1, dictionary2):
-    return
+    A = {**dictionary1, **dictionary2}
+    return A
